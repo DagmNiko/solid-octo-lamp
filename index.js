@@ -10,8 +10,8 @@ submitButton.addEventListener("click", () => {
   thanksContainer.classList.remove("hidden");
 
   ratings.forEach((rating) => {
-    rating.addEventListener("click", () => {
-      actualRating.innerHTML = rating.innerHTML;
+    rating.addEventListener("click", (e) => {
+      actualRating.innerHTML = e.target.innerHTML;
     });
   });
 });
